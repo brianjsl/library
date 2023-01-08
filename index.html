@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>Library</header>
+    <div class="content">
+        <div class="sidebar">
+            <button class="add">New Book</button>
+            <button class="reset">Reset</button>
+        </div>
+        <div class="cards">
+        </div>
+    </div>
+    <form class="form-popup" action="index.html" method="POST">
+        <fieldset>
+            <div class="header">
+                <legend>Book Details</legend>
+                <button type="reset" class="close" onclick="closeForm()"><img src="src/closeButton.png" height="25px" width="auto" /></button>
+            </div>
+            <ul class="details">
+                <li><input type="text" placeholder="Title" id="title" name="title" required></li>
+
+                <li><input type="text" placeholder="Author" id="author" name="author" required></li>
+
+                <li><input type="number" placeholder="# of pages" id="pages" 
+                name="pages" min="0" title="Must have more than 0 pages!" required></li>
+
+                <li>
+                    <label for="read" class="read">Read?</label>
+                    <input type="checkbox" id="read" name="read">
+                </li>
+            </ul>
+        </fieldset>
+
+        <button type="submit" class="submit">Submit</button>
+    </form>
+    <footer>Copyright © Brian Lee 2023</footer>
+</body>
+</html>
